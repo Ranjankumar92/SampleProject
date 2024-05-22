@@ -14,7 +14,7 @@ jobs:
     steps:
       - name: Checkout Repository 1
         uses: actions/checkout@v4
-      - id: checkout1
+        id: checkout1
       
       - name: Run a one-line script
         run:  echo "Hello Cats config files"
