@@ -17,5 +17,4 @@ jobs:
       - id: checkout1
       
       - name: Run a one-line script
-        run: |
-          echo "Hello Cats config files"
+        run:  echo "Hello Cats config files"
