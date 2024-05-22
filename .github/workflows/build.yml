@@ -20,7 +20,7 @@ jobs:
         run: |
           pwd
           ls
-          cd /CRUD_Application
+          cd /home/runner/work/SampleProject/SampleProject/CRUD_Application
       
       - name: Set up JDK
         uses: actions/setup-java@v2
