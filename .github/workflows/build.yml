@@ -19,6 +19,7 @@ jobs:
       - name: Navigate to CRUD-Application
         run: |
           pwd
+          ls
           cd /CRUD-Application
       
       - name: Set up JDK
