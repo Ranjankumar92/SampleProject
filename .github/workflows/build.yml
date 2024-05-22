@@ -15,12 +15,6 @@ jobs:
       - name: Checkout Repository 1
         uses: actions/checkout@v4
         id: checkout1
-
-      - name: Navigate to CRUD-Application
-        run: |
-          pwd
-          ls
-          cd /home/runner/work/SampleProject/SampleProject/CRUD_Application
       
       - name: Set up JDK
         uses: actions/setup-java@v2
@@ -31,6 +25,6 @@ jobs:
       - name: Build with Maven
         run: |
           cd /home/runner/work/SampleProject/SampleProject/CRUD_Application
-          mvn -B clean package 
+          mvn clean install 
 
         
