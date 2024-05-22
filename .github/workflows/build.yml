@@ -17,7 +17,9 @@ jobs:
         id: checkout1
 
       - name: Navigate to CRUD-Application
-        run: cd CRUD-Application
+        run: |
+          pwd
+          cd /CRUD-Application
       
       - name: Set up JDK
         uses: actions/setup-java@v2
