@@ -27,4 +27,9 @@ jobs:
           cd /home/runner/work/SampleProject/SampleProject/CRUD_Application
           mvn clean install 
 
+      - name: Move jar to required directory
+        run: |
+          mkdir c:\\sample_workflow
+          mv /home/runner/work/SampleProject/SampleProject/CRUD_Application/target/CRUD_Application-0.0.1-SNAPSHOT.jar c:\\sample_workflow
+
         
