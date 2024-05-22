@@ -18,5 +18,4 @@ jobs:
       
       - name: Run a one-line script
         run: |
-          echo "Checked out repository: ${{steps.checkout1.outputs.repository}}"
           echo "Hello Cats config files"
