@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository 1
-      - uses: actions/checkout@v4
+        uses: actions/checkout@v4
       - id: checkout1
       
       - name: Run a one-line script
