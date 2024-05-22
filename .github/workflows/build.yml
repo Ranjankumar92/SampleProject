@@ -17,4 +17,7 @@ jobs:
         id: checkout1
       
       - name: Run a one-line script
-        run:  echo "Hello Cats config files: {{steps.checkout1.outputs.repository}}"
+        run: |  
+          owner=$(echo "${{ github.repository }}" | cut -d'/' -f1)
+          repo=$(echo "${{ github.repository }}" | cut -d'/' -f2)
+          echo "Hello Cats config files: $owner/$repo"
