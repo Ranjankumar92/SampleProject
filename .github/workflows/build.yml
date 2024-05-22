@@ -12,6 +12,10 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout Repository 1
       - uses: actions/checkout@v4
+      - id: checkout1
+      
       - name: Run a one-line script
         run: echo Hello, world!
+        run: echo "Checked out repository: ${{ steps.checkout1.outputs.repository}}"
