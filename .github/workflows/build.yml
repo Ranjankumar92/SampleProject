@@ -15,6 +15,8 @@ jobs:
       - name: Checkout Repository 1
         uses: actions/checkout@v4
         id: checkout1
+        with: 
+          path: ''
       
       - name: Set up JDK
         uses: actions/setup-java@v2
