@@ -20,7 +20,7 @@ jobs:
         run: |
           pwd
           ls
-          cd /CRUD-Application
+          cd /CRUD_Application
       
       - name: Set up JDK
         uses: actions/setup-java@v2
